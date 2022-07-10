@@ -7,5 +7,7 @@
       <title>Nodejs News</title>
       <link rel="stylesheet" href="/public/css/styles.css" />
    </head>
-   <body></body>
+   <body>
+      <% articles.forEach(function(article,index){ %> <%- article.title.rendered %> <% }) %>
+   </body>
 </html>
