@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 
+app.use(express.static("public"))
+app.use("/css",express.static(__dirname + `public/css`))
+
+
 app.listen(6000, () => {
    console.log("server ishladi");
 });
